@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-incr-mape",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Compute the mean absolute percentage error (MAPE) incrementally.",
   "license": "Apache-2.0",
   "author": {
