@@ -140,6 +140,25 @@ console.log( accumulator() );
 
 <!-- /.examples -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/stats/incr/maape`][@stdlib/stats/incr/maape]: compute the mean arctangent absolute percentage error (MAAPE) incrementally.
+-   [`@stdlib/stats/incr/mae`][@stdlib/stats/incr/mae]: compute the mean absolute error (MAE) incrementally.
+-   [`@stdlib/stats/incr/mean`][@stdlib/stats/incr/mean]: compute an arithmetic mean incrementally.
+-   [`@stdlib/stats/incr/mmape`][@stdlib/stats/incr/mmape]: compute a moving mean absolute percentage error (MAPE) incrementally.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -196,6 +215,18 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-incr-mape/main/LICENSE
 
 [mean-absolute-percentage-error]: https://en.wikipedia.org/wiki/Mean_absolute_percentage_error
+
+<!-- <related-links> -->
+
+[@stdlib/stats/incr/maape]: https://github.com/stdlib-js/stats-incr-maape
+
+[@stdlib/stats/incr/mae]: https://github.com/stdlib-js/stats-incr-mae
+
+[@stdlib/stats/incr/mean]: https://github.com/stdlib-js/stats-incr-mean
+
+[@stdlib/stats/incr/mmape]: https://github.com/stdlib-js/stats-incr-mmape
+
+<!-- </related-links> -->
 
 </section>
 
