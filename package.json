@@ -1,0 +1,49 @@
+{
+  "name": "@stdlib/stats-incr-mape",
+  "version": "0.0.0",
+  "description": "Compute the mean absolute percentage error (MAPE) incrementally.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stats-incr-mape.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "statistics",
+    "stats",
+    "mathematics",
+    "math",
+    "average",
+    "avg",
+    "mean",
+    "arithmetic mean",
+    "error",
+    "err",
+    "absolute",
+    "abs",
+    "percentage",
+    "percent",
+    "mape",
+    "deviation",
+    "difference",
+    "diff",
+    "delta",
+    "incremental",
+    "accumulator",
+    "time series",
+    "timeseries",
+    "demand",
+    "forecasting",
+    "forecast"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
