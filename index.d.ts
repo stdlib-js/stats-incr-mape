@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,20 +16,27 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var incrmean = require( '@stdlib/stats-incr-mean' );
-var abs = require( '@stdlib/math-base-special-abs' );
-
-
-// MAIN //
+/**
+* If provided input values, the accumulator function returns an updated mean absolute percentage error. If not provided input values, the accumulator function returns the current mean absolute percentage error.
+*
+* ## Notes
+*
+* -   If provided `NaN` or a value which, when used in computations, results in `NaN`, the accumulated value is `NaN` for all future invocations.
+*
+* @param f - input value
+* @param a - input value
+* @returns mean absolute percentage error or null
+*/
+type accumulator = ( f?: number, a?: number ) => number | null;
 
 /**
 * Returns an accumulator function which incrementally computes the mean absolute percentage error.
 *
-* @returns {Function} accumulator function
+* @returns accumulator function
 *
 * @example
 * var accumulator = incrmape();
@@ -46,27 +53,9 @@ var abs = require( '@stdlib/math-base-special-abs' );
 * m = accumulator();
 * // returns ~91.67
 */
-function incrmape() {
-	var mean = incrmean();
-	return accumulator;
-
-	/**
-	* If provided input values, the accumulator function returns an updated mean absolute percentage error. If not provided input values, the accumulator function returns the current mean absolute percentage error.
-	*
-	* @private
-	* @param {number} [f] - input value
-	* @param {number} [a] - input value
-	* @returns {(number|null)} mean absolute percentage error or null
-	*/
-	function accumulator( f, a ) {
-		if ( arguments.length === 0 ) {
-			return mean();
-		}
-		return mean( 100.0 * abs( (a-f)/a ) );
-	}
-}
+declare function incrmape(): accumulator;
 
 
 // EXPORTS //
 
-module.exports = incrmape;
+export = incrmape;
