@@ -30,10 +30,14 @@ The [mean absolute percentage error][mean-absolute-percentage-error] is defined 
 
 <!-- <equation class="equation" label="eq:mean_absolute_percentage_error" align="center" raw="\operatorname{MAPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|" alt="Equation for the mean absolute percentage error."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{MAPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|" data-equation="eq:mean_absolute_percentage_error">
+```math
+\operatorname{MAPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{MAPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|" data-equation="eq:mean_absolute_percentage_error">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d4867162fd6445b10f93ca01f3f764bc646662d8/lib/node_modules/@stdlib/stats/incr/mape/docs/img/equation_mean_absolute_percentage_error.svg" alt="Equation for the mean absolute percentage error.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -218,7 +222,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
