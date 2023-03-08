@@ -30,10 +30,14 @@ The [mean absolute percentage error][mean-absolute-percentage-error] is defined 
 
 <!-- <equation class="equation" label="eq:mean_absolute_percentage_error" align="center" raw="\operatorname{MAPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|" alt="Equation for the mean absolute percentage error."> -->
 
-<div class="equation" align="center" data-raw-text="\operatorname{MAPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|" data-equation="eq:mean_absolute_percentage_error">
+```math
+\operatorname{MAPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\operatorname{MAPE}  = \frac{100}{n} \sum_{i=0}^{n-1} \biggl| \frac{a_i - f_i}{a_i} \biggr|" data-equation="eq:mean_absolute_percentage_error">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d4867162fd6445b10f93ca01f3f764bc646662d8/lib/node_modules/@stdlib/stats/incr/mape/docs/img/equation_mean_absolute_percentage_error.svg" alt="Equation for the mean absolute percentage error.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -43,38 +47,30 @@ where `f_i` is the forecast value and `a_i` is the actual value.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-mape
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-incrmape = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mape@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var incrmape = require( 'path/to/vendor/umd/stats-incr-mape/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mape@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.incrmape;
-})();
-</script>
+var incrmape = require( '@stdlib/stats-incr-mape' );
 ```
 
 #### incrmape()
@@ -131,14 +127,9 @@ m = accumulator();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mape@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var incrmape = require( '@stdlib/stats-incr-mape' );
 
 var accumulator;
 var v1;
@@ -155,11 +146,6 @@ for ( i = 0; i < 100; i++ ) {
     accumulator( v1, v2 );
 }
 console.log( accumulator() );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -236,7 +222,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -256,13 +242,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/maape]: https://github.com/stdlib-js/stats-incr-maape/tree/umd
+[@stdlib/stats/incr/maape]: https://github.com/stdlib-js/stats-incr-maape
 
-[@stdlib/stats/incr/mae]: https://github.com/stdlib-js/stats-incr-mae/tree/umd
+[@stdlib/stats/incr/mae]: https://github.com/stdlib-js/stats-incr-mae
 
-[@stdlib/stats/incr/mean]: https://github.com/stdlib-js/stats-incr-mean/tree/umd
+[@stdlib/stats/incr/mean]: https://github.com/stdlib-js/stats-incr-mean
 
-[@stdlib/stats/incr/mmape]: https://github.com/stdlib-js/stats-incr-mmape/tree/umd
+[@stdlib/stats/incr/mmape]: https://github.com/stdlib-js/stats-incr-mmape
 
 <!-- </related-links> -->
 
