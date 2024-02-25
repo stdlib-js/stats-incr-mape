@@ -65,7 +65,7 @@ where `f_i` is the forecast value and `a_i` is the actual value.
 ## Usage
 
 ```javascript
-import incrmape from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mape@esm/index.mjs';
+import incrmape from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mape@v0.2.1-esm/index.mjs';
 ```
 
 #### incrmape()
@@ -129,7 +129,7 @@ m = accumulator();
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import incrmape from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mape@esm/index.mjs';
+import incrmape from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mape@v0.2.1-esm/index.mjs';
 
 var accumulator;
 var v1;
