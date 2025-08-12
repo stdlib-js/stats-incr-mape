@@ -58,14 +58,32 @@ where `f_i` is the forecast value and `a_i` is the actual value.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-mape
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import incrmape from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mape@deno/mod.js';
+var incrmape = require( '@stdlib/stats-incr-mape' );
 ```
 
 #### incrmape()
@@ -106,11 +124,11 @@ m = accumulator();
 
 -   Input values are **not** type checked. If provided `NaN` or a value which, when used in computations, results in `NaN`, the accumulated value is `NaN` for **all** future invocations. If non-numeric inputs are possible, you are advised to type check and handle accordingly **before** passing the value to the accumulator function.
 
--   **Warning**: the [mean absolute percentage error][mean-absolute-percentage-error]  has several shortcomings: 
+-   **Warning**: the [mean absolute percentage error][mean-absolute-percentage-error]  has several shortcomings:
 
     -   The measure is **not** suitable for intermittent demand patterns (i.e., when `a_i` is `0`).
     -   The [mean absolute percentage error][mean-absolute-percentage-error] is not symmetrical, as the measure cannot exceed 100% for forecasts which are too "low" and has no limit for forecasts which are too "high".
-    -   When used to compare the accuracy of forecast models (e.g., predicting demand), the measure is biased toward forecasts which are too low. 
+    -   When used to compare the accuracy of forecast models (e.g., predicting demand), the measure is biased toward forecasts which are too low.
 
 </section>
 
@@ -123,8 +141,8 @@ m = accumulator();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import incrmape from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mape@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var incrmape = require( '@stdlib/stats-incr-mape' );
 
 var accumulator;
 var v1;
@@ -173,7 +191,7 @@ console.log( accumulator() );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -240,13 +258,13 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/maape]: https://github.com/stdlib-js/stats-incr-maape/tree/deno
+[@stdlib/stats/incr/maape]: https://github.com/stdlib-js/stats-incr-maape
 
-[@stdlib/stats/incr/mae]: https://github.com/stdlib-js/stats-incr-mae/tree/deno
+[@stdlib/stats/incr/mae]: https://github.com/stdlib-js/stats-incr-mae
 
-[@stdlib/stats/incr/mean]: https://github.com/stdlib-js/stats-incr-mean/tree/deno
+[@stdlib/stats/incr/mean]: https://github.com/stdlib-js/stats-incr-mean
 
-[@stdlib/stats/incr/mmape]: https://github.com/stdlib-js/stats-incr-mmape/tree/deno
+[@stdlib/stats/incr/mmape]: https://github.com/stdlib-js/stats-incr-mmape
 
 <!-- </related-links> -->
 
